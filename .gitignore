@@ -11,6 +11,12 @@
 /target/
 /bin/
 
+# Ignore Maven build files
+*.log
+*.war
+*.jar
+*.ear
+
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db

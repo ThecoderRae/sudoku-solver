@@ -1,3 +1,5 @@
+package org.sibe;
+
 public class SudokuSolver {
 
     private static final int GRID_SIZE = 9;
@@ -16,4 +18,6 @@ public class SudokuSolver {
                 {0, 0, 7, 0, 4, 0, 2, 0, 3}
         };
     }
+
+
 }
