@@ -20,4 +20,39 @@ public class SudokuSolver {
     }
 
 
+    /**
+     * This method determines whether a given number exists in a specified row oaram number The integer to search for.
+     * @param row The index of the row to search within.
+     * @return {@code true} if the number is found, otherwise {@code false}.
+     */
+    private static Boolean isNumberInRow(int[][] board, int number, int row) {
+        for (int i = 0; i < GRID_SIZE; i++) {
+            if (board[row][i] == number) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     * This method determines whether a given number exists in a specified column of a 2D array.
+     *f a 2D array.
+     *
+     * @param board  The 2D array to search in.
+     * @param number The integer to search for.
+     * @param column The index of the column to search within.
+     * @return {@code true} if the number is found, otherwise {@code false}.
+     */
+    private static Boolean isNumberInColumn(int[][] board, int number, int column) {
+        for (int i = 0; i < GRID_SIZE; i++) {
+            if (board[i][column] == number) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
 }
